@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- IMPORTANT for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ledger-Based Transaction System</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(30, 41, 59, 0.95);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      width: 100%;
+      max-width: 600px;
+      transition: 0.3s;
+    }
+
+    h1 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .status {
+      color: #22c55e;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+      word-break: break-word;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #22c55e;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Tablet */
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+        align-items: flex-start;
+      }
+
+      .container {
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      li {
+        font-size: 14px;
+      }
+
+      .status {
+        font-size: 14px;
+      }
+
+      .footer {
+        font-size: 13px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Ledger-Based Transaction System</h1>
+
+    <div class="status">
+      ● Server Status: <span class="badge">RUNNING</span>
+    </div>
+
+    <div class="section">
+      <strong>Description:</strong>
+      <p>
+        Secure backend ledger system with MongoDB ACID transactions,
+        idempotency, and double-entry accounting.
+      </p>
+    </div>
+
+    <div class="section">
+      <strong>Features:</strong>
+      <ul>
+        <li>Ledger-based balance calculation</li>
+        <li>Double-entry accounting (DEBIT/CREDIT)</li>
+        <li>MongoDB ACID transactions</li>
+        <li>Idempotent transaction handling</li>
+        <li>JWT Authentication</li>
+        <li>Email notifications</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <strong>API Endpoints:</strong>
+      <ul>
+        <li>POST /api/auth/signup</li>
+        <li>POST /api/auth/login</li>
+        <li>POST /api/auth/logout</li>
+        <li>POST /api/transaction</li>
+        <li>POST api/system/initial-funds</li>
+        <li>GET /api/account/balance</li>
+        <li>GET /api/accounts</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Author: Deva
+      <a style="color:aqua;" href="https://github.com/deva-ydv" target="_blank">
+        Github
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
