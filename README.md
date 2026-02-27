@@ -10,7 +10,7 @@ A production-level backend system that simulates real-world banking transaction 
 - Double-entry accounting system (DEBIT/CREDIT)
 - MongoDB ACID transactions for atomic operations
 - Idempotency support to prevent duplicate transactions
-- JWT Authentication
+- JWT Authentication / JWT token blacklisting
 - Email notifications for transactions
 - Transaction status tracking (PENDING, COMPLETED, FAILED, REVERSED)
 - RESTful API architecture
