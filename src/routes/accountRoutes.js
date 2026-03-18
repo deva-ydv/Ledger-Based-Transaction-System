@@ -15,6 +15,8 @@ router.post('/', authMiddleware, createAccount)
 // GET api/accounts
 // get all the accounts logged in users
 // protected route
+
+
 router.get('/', authMiddleware, getUserAccounts)
 
 // GET api/accounts
