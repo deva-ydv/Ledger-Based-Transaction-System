@@ -43,7 +43,9 @@ Deployed a Dockerized Node.js application on **AWS EC2** using:
 
 ---
 
-## 🧠 Architecture Overview
+## 🧠 Basic Architecture Overview
+<img width="1536" height="1024" alt="Basic Architecture" src="https://github.com/user-attachments/assets/f03bf646-38fb-4000-b59a-9bf46ab01552" />
+
 
 Instead of storing balance directly, the system calculates balance from ledger entries:
 
@@ -83,3 +85,19 @@ git clone https://github.com/deva-ydv/Ledger-Based-Transaction-System.git
 cd Ledger-Based-Transaction-System
 
 docker-compose up -d --build
+```
+---
+
+## 👨‍💻 Author
+
+**Deva Ydv**
+
+* GitHub: https://github.com/deva-ydv
+* Portfolio: https://devadeveloper.in
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
+
