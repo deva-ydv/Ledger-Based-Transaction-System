@@ -3,8 +3,6 @@ const app = require("./src/app");
 const connectDB = require('./src/config/db')
 
 const PORT = process.env.PORT
-connectDB()
-
-
+connectDB() // db connection
 
 app.listen(PORT,()=>console.log(`server running on port ${PORT}`))
