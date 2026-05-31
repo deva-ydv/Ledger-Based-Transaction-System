@@ -15,8 +15,9 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, "../public")));
 // Swagger route
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-app.use('/api/auth', authRouter)
-app.use('/api/accounts',accountRouter)
-app.use('/api/transactions', transactionRoutes)
+
+app.use('/api/auth', authRouter) // auth apis
+app.use('/api/accounts',accountRouter) // accounts apis
+app.use('/api/transactions', transactionRoutes) // transactions apis
 
 module.exports = app
