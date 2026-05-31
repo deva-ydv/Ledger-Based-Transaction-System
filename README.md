@@ -1,7 +1,5 @@
 # 💰 Ledger-Based Transaction System
 
-🔗 **Live Demo:** https://banksystem.devadeveloper.in/
-
 A production-ready backend system simulating real-world banking infrastructure using **ledger-based accounting** and **MongoDB transactions**.
 
 ---
